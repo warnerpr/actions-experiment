@@ -1,4 +1,9 @@
 import os
+import json
 from pprint import pprint
 
-pprint(os.environ)
+
+with open(os.environ['GITHUB_EVENT_PATH']) as f:
+    data = json.load(f)
+
+pprint(data)

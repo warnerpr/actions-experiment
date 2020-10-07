@@ -1,4 +1,4 @@
-import env
+import sys
 from pprint import pprint
 
-pprint(env)
+pprint(sys.env)
